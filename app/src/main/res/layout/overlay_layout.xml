@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFl"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:clickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/red"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/baseline_android_24"
+            android:rotation="-90"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
